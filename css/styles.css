@@ -40,6 +40,10 @@ ul {
 
 }
 
+img {
+    display: block;
+}
+
 .body-page-one {
     background-color: var(--white);
     color: var(--additional-info);
@@ -50,7 +54,7 @@ ul {
 .list {
     list-style: none;
 }
-.header-webstudio link {
+.header-webstudio {
     width: 1440px;
 height: 72px;
 flex-shrink: 0;
@@ -60,7 +64,16 @@ align-items: center;
 display: flex;
 padding-top: 24px;
 padding-bottom: 24px;
+border-bottom: solid #e7e9fc;
 }
+.container {
+    display: flex;
+    width: 1158px;
+    }
+    .header-navigation {
+        display: flex;
+        align-items: center;
+    }
 
     .header-logo-link {
         color: var(--logo-color);
@@ -71,7 +84,9 @@ padding-bottom: 24px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
     }
+
     .header-logo-second {
     color: var(--navyblue);
     font-family: Raleway,sans-serif; 
@@ -82,7 +97,13 @@ padding-bottom: 24px;
     text-transform: uppercase;
     text-decoration: none;
     }
-
+    .header-menu-list {
+        display: flex;
+        gap: 40px;
+    }
+    .header-menu-list-item {
+        padding: 24px 0;
+    }
     .header-menu-link {
         color: var(--navyblue);
         text-decoration: none;
@@ -95,14 +116,15 @@ padding-bottom: 24px;
     .header-menu-link:focus {
     color: var(--hover-focus-color);
     }
-
-
-    .link: {
+    .link {
         text-decoration:none;
     }
-
     .address-menu{
         font-style: var(--style);
+    }
+    .address-menu-list {
+        display: flex;
+        gap: 40px;
     }
     .address-menu-contacts-item {
         font-style: var(--style);
@@ -117,9 +139,10 @@ padding-bottom: 24px;
     .address-menu-contacts-item:focus {
         font-style: var(--style);
         color: var(--hover-focus-color);
-
     }
-    
+    .hero-main {
+        padding: 188px 0;
+    }
     .hero-wrap {
     background-color: var(--navyblue);
     border-radius: mixed;
@@ -135,7 +158,8 @@ padding-bottom: 24px;
         font-family: Roboto;
         font-size: 56px;
         line-height: 1.07;
-        letter-spacing: 0.02em
+        letter-spacing: 0.02em;
+        max-width: 496px;
     }
     
     .hero-main-btn {
@@ -150,6 +174,11 @@ padding-bottom: 24px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     }
 
     .hero-main-btn:hover,
@@ -157,21 +186,47 @@ padding-bottom: 24px;
     background-color: var(--hover-focus-color);
     }
 
+    .benefit-title-main {
+        padding: 120px 0; 
+    }
+    .visually-hidden {
+        position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+    }
+    .benefit-list {
+        display: flex;
+        gap: 24px;
+    }
     .benefit-title {
         color: var(--navyblue);
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        width: calc((100% - 72px) / 4);
     }
+    
     .benefit-item {
         color: var(--additional-info);
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
     }
-    
-    .concept-title {
+
+    .concept-title-main {
+        padding-bottom: 120px;
+    }
+
+    .concept-title-name {
+    margin-bottom: 72px;
     color: var(--navyblue);
     font-size: 36px;
     line-height: 1.11;
@@ -179,12 +234,20 @@ padding-bottom: 24px;
     text-transform: capitalize;
     text-align: center;
     }
-    
+
+    .concept-list {
+        display: flex;
+        gap: 24px;
+    }
+    .concept-list-item {
+        width: calc((100% - 3 * 16px) / 3);
+    }
     .team {
     background-color: var(--team-color);
+    padding: 120px 0;
     }
 
-    .team-member{
+    .team-member {
         background-color: var(--white);
     }
     .team-title {
@@ -194,8 +257,20 @@ padding-bottom: 24px;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
     }
 
+    .team-list {
+        display: flex;
+        gap: 24px; 
+    }
+    .team-member {
+        width: calc((100% - 3 * 24px)/ 4);
+        border-radius: 0px 0px 4px 4px;
+    }
+    .container-team-wrap {
+        padding: 32px 0; 
+    }
     .team-item {
         background-color: var(--white);
         color: var(--navyblue);
@@ -203,19 +278,23 @@ padding-bottom: 24px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        text-align: center;
+        margin-bottom: 8px;
     }
     
-    .team-info{
+    .team-info {
     background-color: var(--white);
     color: var(--additional-info);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
     }
     
     .footer-accent {
         background-color: var(--navyblue);
         color: var(--team-color);
+        padding: 100px 0;
     
     }
     
@@ -228,6 +307,8 @@ padding-bottom: 24px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
     }
     .footer-logo-second {
     color: var(--team-color);
@@ -257,9 +338,17 @@ padding-bottom: 24px;
         .list {
             list-style: none;
         }
-        
+        img {
+            display: block;
+        }
         .header-portfolio {
             font-style: var(--style);
+            border-bottom: 1px solid #e7e9fc;
+        }
+
+        .header-container-portfolio {
+            display: flex; 
+            width: 1158px; 
         }
     
         .header-portfolio-logo {
@@ -270,6 +359,11 @@ padding-bottom: 24px;
             line-height: 1.17;
             letter-spacing: 0.03em;
             text-transform: uppercase;
+            margin-right: 76px;
+        }
+        .header-portfolio-navigation {
+            display: flex;
+            align-items: center;
         }
         .header-portfolio-second {
             color: var(--navyblue);
@@ -280,6 +374,13 @@ padding-bottom: 24px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         font-style: normal;
+        }
+        .header-portfolio-list {
+            display: flex;
+            gap: 40px; 
+        }
+        .header-portfolio-item {
+            padding: 24px 0; 
         }
         .header-portfolio-link {
             color: var(--navyblue);
@@ -294,13 +395,18 @@ padding-bottom: 24px;
             color: var(--hover-focus-color);
         }
     
-        .link:{
+        .link {
             text-decoration:none;
         }
 
         .address-portfolio {
             font-style: var(--style);
         } 
+
+        .address-portfolio-list {
+            display: flex; 
+            gap: 40px;
+        }
 
         .address-portfolio-contacts,
         .address-portfolio-contacts-item {
@@ -317,8 +423,27 @@ padding-bottom: 24px;
             color: var(--hover-focus-color);
     
         }
-    
-    
+    .portfolio-section {
+        padding-top: 96px; 
+        padding-bottom: 120px;
+    }
+    .visually-hidden-portfolio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+    }
+    .portfolio-menu-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 72px;
+    }
         .portfolio-menu-btn-special{
             background-color: var(--team-color);
             color: var(--logo-color);
@@ -328,21 +453,38 @@ padding-bottom: 24px;
             line-height: 1.5;
             letter-spacing: 0.04em;
             cursor: pointer;
+            padding: 12px 24px;
+            border: 1px solid #e7e9fc;
+            border-radius: 4px; 
         }
     
         .portfolio-menu-btn-special:hover,
         .portfolio-menu-btn-special:focus {
         color: var(--white);
         background-color: var(--hover-focus-color);
+        border: 1px solid transparent;
         }
-    
-    
+        .functional-portfolio-list {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 24px; 
+            row-gap: 48px; 
+        }
+        .interface {
+            width: calc((100% - 48px) / 3); 
+        }
+        .container-portfolio-interface {
+            padding: 32px 16px;
+            border: 1px solid #e7e9fc;
+            border-top: none;
+        }
         .functional-portfolio-item {
             color: var(--navyblue);
             font-size: 20px;
             font-weight: 500;
             line-height: 1.2;
             letter-spacing: 0.02em;
+            margin-bottom: 8px; 
         }
         .functional-portfolio-info {
         color: var(--additional-info);
@@ -353,6 +495,7 @@ padding-bottom: 24px;
         .footer-portfolio {
             background-color: var(--navyblue);
             color: var(--white);
+            padding: 100px 0;
         }
         
         .footer-portfolio-logo {
@@ -363,6 +506,8 @@ padding-bottom: 24px;
             line-height: 1.17;
             letter-spacing: 0.03em;
             text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 16px;
         }
         .footer-portfolio-logo-second {
         color: var(--team-color);
