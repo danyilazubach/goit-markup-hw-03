@@ -31,7 +31,7 @@ ul {
     margin-bottom: 0;
 }
 
-.container {
+.header-container .container {
     width: 100%;
     max-width: 1470px;
     padding-left: 15px;
@@ -54,22 +54,23 @@ img {
 .list {
     list-style: none;
 }
+
 .header-webstudio {
     width: 1440px;
-height: 72px;
-flex-shrink: 0;
-background-color:var(--white);
-justify-content: center;
-align-items: center;
-display: flex;
-padding-top: 24px;
-padding-bottom: 24px;
-border-bottom: solid #e7e9fc;
+    height: 72px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc;
 }
+
 .container {
     display: flex;
     width: 1158px;
     }
+
     .header-navigation {
         display: flex;
         align-items: center;
@@ -102,7 +103,7 @@ border-bottom: solid #e7e9fc;
         gap: 40px;
     }
     .header-menu-list-item {
-        padding: 24px 0;
+       padding: 24px 0 24px; 
     }
     .header-menu-link {
         color: var(--navyblue);
@@ -143,7 +144,7 @@ border-bottom: solid #e7e9fc;
     .hero-main {
         padding: 188px 0;
     }
-    .hero-wrap {
+    .hero-main .container {
     background-color: var(--navyblue);
     border-radius: mixed;
     padding-top: 472px;
@@ -191,34 +192,37 @@ border-bottom: solid #e7e9fc;
     }
     .visually-hidden {
         position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
     }
     .benefit-list {
         display: flex;
         gap: 24px;
     }
     .benefit-title {
+        width: calc((100% - 3 * 24px) / 4); 
+    }
+    .benefit-title-subsection {
         color: var(--navyblue);
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        width: calc((100% - 72px) / 4);
+        margin-bottom: 8px;
     }
-    
     .benefit-item {
         color: var(--additional-info);
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        margin-bottom: 8px;
+    
     }
 
     .concept-title-main {
@@ -249,6 +253,8 @@ border-bottom: solid #e7e9fc;
 
     .team-member {
         background-color: var(--white);
+        width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
     }
     .team-title {
     color: var(--navyblue);
