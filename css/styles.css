@@ -69,6 +69,8 @@ img {
 .container {
     display: flex;
     width: 1158px;
+    margin: 0;
+    padding: 0 15px 0 15px;
     }
 
     .header-navigation {
@@ -103,7 +105,8 @@ img {
         gap: 40px;
     }
     .header-menu-list-item {
-       padding: 24px 0 24px; 
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
     .header-menu-link {
         color: var(--navyblue);
@@ -304,7 +307,7 @@ img {
     
     }
     
-    .footer-logo-link{
+    .footer-logo-link {
         color: var(--logo-color);
         font-family: Raleway, sans-serif;
         font-size: 18px;
@@ -313,8 +316,8 @@ img {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        display: inline-block;
         margin-bottom: 16px;
+        display: inline-block;
     }
     .footer-logo-second {
     color: var(--team-color);
@@ -352,9 +355,12 @@ img {
             border-bottom: 1px solid #e7e9fc;
         }
 
-        .header-container-portfolio {
+        .header-container-portfolio .container {
             display: flex; 
             width: 1158px; 
+            margin: 0;
+            padding-left: 15px; 
+            padding-right: 15px;
         }
     
         .header-portfolio-logo {
@@ -384,6 +390,8 @@ img {
         .header-portfolio-list {
             display: flex;
             gap: 40px; 
+            padding-top: 24px;
+            padding-bottom: 24px;
         }
         .header-portfolio-item {
             padding: 24px 0; 
@@ -433,17 +441,7 @@ img {
         padding-top: 96px; 
         padding-bottom: 120px;
     }
-    .visually-hidden-portfolio {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    white-space: nowrap;
-    }
+
     .portfolio-menu-list {
         display: flex;
         justify-content: center;
@@ -477,7 +475,7 @@ img {
             row-gap: 48px; 
         }
         .interface {
-            width: calc((100% - 48px) / 3); 
+            width: calc((100% - 48px) / 3);
         }
         .container-portfolio-interface {
             padding: 32px 16px;
