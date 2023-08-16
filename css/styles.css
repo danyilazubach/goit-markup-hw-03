@@ -122,7 +122,7 @@ img {
     .address-menu {
         font-style: var(--style);
         align-items: center;
-        margin-left:0 auto; 
+        margin-left: auto; 
     }
     .address-menu-list {
         display: flex;
@@ -406,12 +406,12 @@ img {
             font-style: var(--style);
             align-items: center;
             justify-content: flex-start;
+            margin-left: auto;
         } 
 
         .address-portfolio-list {
             display: flex; 
             gap: 40px;
-            margin-left: 0 auto;
         }
 
         .address-portfolio-contacts,
