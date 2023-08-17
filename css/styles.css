@@ -158,7 +158,7 @@ img {
         letter-spacing: 0.02em;
         max-width: 496px;
         margin: 0 auto;
-        margin-bottom: 120px; 
+        margin-bottom: 48px; 
     }
     
     .hero-main-btn {
@@ -351,10 +351,18 @@ img {
         }
         .header-portfolio {
             font-style: var(--style);
+            background-color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-bottom: 1px solid #e7e9fc;
+            width: 1440px;
+            height: 72px;
+            padding: 24px 0;
         }
+    
 
-        .header-subcontainer-portfolio.container {
+        .header-subcontainer-portfolio {
             display: flex;
             align-items: center;
         }
@@ -498,24 +506,32 @@ img {
             padding: 100px 0;
         }
         
+
         .footer-portfolio-logo {
             color: var(--logo-color);
             font-family: Raleway, sans-serif;
             font-size: 18px;
+            font-style: var(--style);
             font-weight: 800;
             line-height: 1.17;
             letter-spacing: 0.03em;
             text-transform: uppercase;
-            display: inline-block;
             margin-bottom: 16px;
+            display: inline-block;
         }
         .footer-portfolio-logo-second {
         color: var(--team-color);
-        font-family: Raleway,sans-serif; 
+        font-family: Raleway, sans-serif; 
         font-size: 18px;
         font-weight: 800;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
         text-transform: uppercase;
         }
+    .footer-portfolio-paragraph {
+    color: var(--team-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
     
